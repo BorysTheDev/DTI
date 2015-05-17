@@ -1,3 +1,4 @@
+#pragma once
 
 struct SGiven;
 struct SDPoint;
@@ -9,7 +10,7 @@ class C2DCalcManager
 public:
 	CCalcManager(const SGiven& given);
 	
-	const std::vector<SDPoint>& GetDiscreteConturs();
+	const std::vector<SDPoint>& GetDiscreteContours();
 	const std::vector<Complex>& GetDiscreteCurrents();
 	
 	Complex Field(SDPoint point);
